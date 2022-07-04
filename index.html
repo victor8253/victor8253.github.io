@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax</title>
+
+    <style type="text/css"> 
+
+    body, html {
+        margin: 0;
+        font: 16px "Lato", sans-serif;
+        color: #777;
+        height: 100%; /*SEGREDO DO EFEITO PARALLAX*/
+        
+    }
+
+    .conteudo {
+        color: #777;
+        background-color: #fff;
+        text-align: center;
+        padding: 50px 80px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: #111;
+        text-align: center;
+    }
+
+    .caixa1, .caixa2, .caixa3, .caixa4 {
+        
+        position: relative;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /*ITEM QUE DÁ O EFEITO PARALLAX*/
+
+
+    }
+
+    .caixa1 {
+        background-image: url(./imagem1.jpg);
+
+    }
+
+    .caixa2 {
+        background-image: url(./imagem2.jpg);
+
+    }
+
+    .caixa3 {
+        background-image: url(./imagem3.jpg);
+
+    }
+
+    .caixa4 {
+        background-image: url(./imagem4.jpg);
+
+    }
+
+    .conteudo1 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .conteudo1 .titulo{ 
+        color: #fff;
+        background-color: #111;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 5px; /*ESPAÇO ENTRES AS LETRAS*/
+
+
+    }
+
+    </style>
+
+</head>
+
+<body>
+    
+    
+
+    <div class="caixa1">
+        <div class="conteudo1">
+            <span class="titulo">O que é ser feliz?</span> 
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Quem quer ser feliz?</h3>
+        <p>
+            Ser feliz é um estado de espiríto, um momento ou um instante. Acho que todos nós queremos
+            ser felizes.
+        </p>
+    </div>
+
+    <div class="caixa2">
+        <div class="conteudo1">
+            <span class="titulo">Estrada pra felicidade</span> 
+        </div>
+    </div>
+    
+    <div class="conteudo">
+        <h3>Todos nós queremos ser felizes</h3>
+        <p>
+            Primeiro passo para ser feliz é se aceitar como é, não é uma missão fácil, mas é o começo de tudo!
+        </p>
+    </div>
+
+    <div class="caixa3">
+        <div class="conteudo1">
+            <span class="titulo">Ser feliz também não é fácil</span> 
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Respire e faça uma coisa de cada vez!</h3>
+        <p>
+            Faça uma coisa de cada vez, respeite seus limites e siga sempre em frente. A sua mente
+            é capaz de coisas inacreditáveis...
+        </p>
+    </div>
+
+    <div class="caixa4">
+        <div class="conteudo1">
+            <span class="titulo">Viajar</span> 
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Aproveite!!!</h3>
+        <p>
+            Curta a viagem e a admire a paisagem, pois é uma viagem que nunca retorna a sua origem!
+        </p>
+    </div>
+    
+</body>
+
+</html>
